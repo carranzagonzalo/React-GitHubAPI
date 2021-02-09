@@ -1,38 +1,103 @@
-.App {
+body {
+	background-color: #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+  line-height: 1em;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
   text-align: center;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  overflow: auto;
+  vertical-align: middle;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-left {
+  text-align: left;
+  padding: 15px;
+  margin-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon-style { 
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.third-column { 
+  visibility: hidden;
+  color: #000;
+}
+
+.inline { 
+  display: inline;
+}
+
+.extra-margin { 
+  margin-bottom: 25px;
+}
+
+.button {
+	background-color: rgb(80, 135, 247);
+  border: 0px;
   color: white;
+  padding: 10px 30px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+	background-color: rgb(55, 98, 190);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.black-text { 
+  color: #000;
+  font-size: 1.1em;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  text-align: left;
+}
+
+.relative {
+  position: relative;
+  left: 0px;
+  margin-bottom: 1.5em;
+}
+
+.absolute {
+  position: absolute;
+  top: 0.3em;
+  left: 5em;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.soft-color { 
+  color: rgb(177, 177, 177);
+  line-height: 0.1em;
 }
